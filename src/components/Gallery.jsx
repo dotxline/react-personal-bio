@@ -1,14 +1,14 @@
-import React from "react";
-import Modal from "./Modal.jsx";
-import one from "../../public/assets/img/1.jpg";
-import two from "../../public/assets/img/2.jpg";
-import three from "../../public/assets/img/3.jpg";
-import four from "../../public/assets/img/4.gif";
-import five from "../../public/assets/img/5.jpg";
-import six from "../../public/assets/img/6.jpg";
-import seven from "../../public/assets/img/7.jpg";
-import eight from "../../public/assets/img/8.jpg";
-import nine from "../../public/assets/img/9.jpg";
+import React from 'react';
+import Modal from './Modal.jsx';
+import one from '../../public/assets/img/1.jpg';
+import two from '../../public/assets/img/2.jpg';
+import three from '../../public/assets/img/3.jpg';
+import four from '../../public/assets/img/4.gif';
+import five from '../../public/assets/img/5.jpg';
+import six from '../../public/assets/img/6.jpg';
+import seven from '../../public/assets/img/7.jpg';
+import eight from '../../public/assets/img/8.jpg';
+import nine from '../../public/assets/img/9.jpg';
 
 
 class Gallery extends React.Component {

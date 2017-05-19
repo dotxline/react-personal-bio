@@ -29,10 +29,15 @@ module.exports = {
 
     // This section desribes the transformations we will perform
     module: {
+
         loaders: [{
             test: /\.(png|jpg|gif)$/,
             loader: 'file-loader?name=/assets/img/[name].[ext]'
         }, {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
+        },
+        {
             // Only working with files that in in a .js or .jsx extension
             test: /\.jsx?$/,
             // Webpack will only process files in our app folder. This avoids processing
@@ -44,7 +49,6 @@ module.exports = {
                 presets: ["react", "es2015"]
             }
         }],
-
     },
 
     resolve: {

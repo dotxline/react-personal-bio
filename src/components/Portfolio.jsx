@@ -1,8 +1,8 @@
-import React from "react";
-import githubIcon from "../../public/assets/img/gh.png";
-import cityTrek from "../../public/assets/img/citytrek.jpg";
-import shinsa from "../../public/assets/img/shinsa.jpg";
-import tukio from "../../public/assets/img/tukio.jpg";
+import React from 'react';
+import githubIcon from '../../public/assets/img/gh.png';
+import cityTrek from '../../public/assets/img/citytrek.jpg';
+import shinsa from '../../public/assets/img/shinsa.jpg';
+import tukio from '../../public/assets/img/tukio.jpg';
 
 class Portfolio extends React.Component {
   render() {

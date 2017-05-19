@@ -1,8 +1,8 @@
-import React from "react";
-import profilePicture from "../../public/assets/img/profile.jpg";
-import fbIcon from "../../public/assets/img/fb.png";
-import igIcon from "../../public/assets/img/ig.png";
-import linkedinIcon from "../../public/assets/img/linkedin.png";
+import React from 'react';
+import profilePicture from '../../public/assets/img/profile.jpg';
+import fbIcon from '../../public/assets/img/fb.png';
+import igIcon from '../../public/assets/img/ig.png';
+import linkedinIcon from '../../public/assets/img/linkedin.png';
 
 
 class Sidebar extends React.Component {
