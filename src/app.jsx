@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Link,
+    Switch
 } from 'react-router-dom'
 
 import '../public/assets/css/style.css';
@@ -32,6 +33,7 @@ const Root = () => {
                 <Navbar />
 
                 <div className="content">
+                    <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path="/home" component={Home} />
                     <Route path="/about" component={About} />
@@ -39,6 +41,7 @@ const Root = () => {
                     <Route path="/portfolio" component={Portfolio} />
                     <Route path="/contact" component={Contact} />
                     <Route component={NoMatch} />
+                    </Switch>
 
                 </div>
                 <Sidebar />
