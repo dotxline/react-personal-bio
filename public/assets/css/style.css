@@ -141,7 +141,8 @@ a li:hover {
     padding: 30px 40px 0
 }
 
-#home-content {
+#home-content,
+#nomatch-content {
     font-size: 35px;
     width: 70%;
     margin: 18% auto;
