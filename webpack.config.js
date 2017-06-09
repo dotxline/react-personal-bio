@@ -10,6 +10,12 @@ module.exports = {
     },
 
     plugins: [
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
+            }
+        }),
+
         new webpack.optimize.UglifyJsPlugin({
             compress: { warnings: false },
             comments: false,
@@ -31,24 +37,25 @@ module.exports = {
     module: {
 
         loaders: [{
-            test: /\.(png|jpg|gif)$/,
-            loader: 'file-loader?name=/assets/img/[name].[ext]'
-        }, {
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
-        },
-        {
-            // Only working with files that in in a .js or .jsx extension
-            test: /\.jsx?$/,
-            // Webpack will only process files in our app folder. This avoids processing
-            // node modules and server files unnecessarily
-            include: /src/,
-            loader: "babel-loader",
-            query: {
-                // These are the specific transformations we'll be using.
-                presets: ["react", "es2015"]
+                test: /\.(png|jpg|gif)$/,
+                loader: 'file-loader?name=/assets/img/[name].[ext]'
+            }, {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
+            {
+                // Only working with files that in in a .js or .jsx extension
+                test: /\.jsx?$/,
+                // Webpack will only process files in our app folder. This avoids processing
+                // node modules and server files unnecessarily
+                include: /src/,
+                loader: "babel-loader",
+                query: {
+                    // These are the specific transformations we'll be using.
+                    presets: ["react", "es2015"]
+                }
             }
-        }],
+        ],
     },
 
     resolve: {
